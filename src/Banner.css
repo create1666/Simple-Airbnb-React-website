@@ -2,6 +2,7 @@
   background: url("https://images.unsplash.com/photo-1599619351208-3e6c839d6828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80") center center;
   position: relative;
   height: 50vh;
+  background: linear-gradient();
 }
 
 .banner__search {
