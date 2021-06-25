@@ -1,32 +1,38 @@
-import React, { useState } from 'react'
-import 'react-date-range/dist/styles.css'; // main style file
-import 'react-date-range/dist/theme/default.css'; // theme css file
-import { DateRangePicker } from 'react-date-range';
-import './Search.css'
+import React, { useState } from "react";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
+import { DateRangePicker } from "react-date-range";
+import "./Search.css";
+import { Button } from "@material-ui/core";
 
-
-
-const Search = () =>  {
-
-  const [startDate, setStartDate] = useState(new Date())
-  const [endDate, setEndDate] = useState(new Date())
-
+const Search = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
 
   const selectionRange = {
     startDate: startDate,
     endDate: endDate,
-    key: 'selection',
-  }
+    key: "selection",
+  };
 
   const handleSelect = (ranges) => {
-    setStartDate(ranges.selection.startDate)
-    setEndDate(ranges.selection.endDate)
-  }
+    setStartDate(ranges.selection.startDate);
+    setEndDate(ranges.selection.endDate);
+  };
   return (
-    <div>
-      < DateRangePicker ranges={[selectionRange]} onChange={handleSelect}/>
+    <div className="search ">
+      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      
+        <h1>
+          Number of guests
+          <PeopleAltIcon />
+        </h1>
+       <input min={0} defaultValue={5} type='number'/>
+       <Button>Search AirB</Button>
+     
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
