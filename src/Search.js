@@ -24,10 +24,10 @@ const Search = () => {
     <div className="search ">
       <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
       
-        <h1>
+        <h2>
           Number of guests
           <PeopleAltIcon />
-        </h1>
+        </h2>
        <input min={0} defaultValue={5} type='number'/>
        <Button>Search AirB</Button>
      
