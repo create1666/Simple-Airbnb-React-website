@@ -14,7 +14,7 @@
   background-color: white;
   position: absolute;
   left: 0;
-  top: 380px;
+  top: 350px;
 }
 
 .search > input {
@@ -23,8 +23,10 @@
   position: absolute;
   left: 0;
   height: 30px;
-  top: 420px;
+  top: 400px;
   border: none;
+  /* background-color: rgb(177, 118, 199); */
+
 }
 
 .search > input:focus {
@@ -34,7 +36,7 @@
 .search > button {
   position: absolute;
   left: 0;
-  top: 480px;
+  top: 460px;
   text-transform: inherit !important;
   color: rgb(255, 255, 255);
   background-color: #453068;

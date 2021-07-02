@@ -30,7 +30,7 @@
   flex: 1;
   max-width: fit-content;
   border: 1px solid lightgray;
-  border-radius: 999px;
+  border-radius: 9px;
   height: 30px;
   padding: 10px;
 }

@@ -1,0 +1,20 @@
+
+.SearchPage {
+  padding: 20px;
+}
+
+.searPage__info > p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.searPage__info > h1 {
+  margin-bottom: 20px;
+  
+}
+
+.searPage__info > button {
+  margin: 5px;
+  border-radius: 30px;
+  text-transform: inherit;
+}
