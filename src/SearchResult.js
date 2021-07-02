@@ -11,7 +11,7 @@ function SearchResult({img, description, star, price}) {
         <FavoriteBorderIcon className='searchResult__heart'/>
       </div>
     </div>
-  )
+  ) 
 }
 
 export default SearchResult
