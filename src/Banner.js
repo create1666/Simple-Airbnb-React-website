@@ -4,8 +4,10 @@ import "./Banner.css";
 import './Search.css'
 
 import Search from "./Search";
+import { useHistory } from "react-router";
 
 const Banner = () => {
+  const history = useHistory()
   const [showDateSearch, setSearchDate] = useState(false);
 
   const handleClick = () => {
@@ -32,7 +34,7 @@ const Banner = () => {
         <h5>
           No better experience than here - Enjoy new level of decision breeze
         </h5>
-        <Button variant="outline"> Explore Nearby </Button>
+        <Button variant="outline" onClick={() => history.push('/search')}> Explore Nearby </Button>
       </div>
     </div>
   );

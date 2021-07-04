@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import "./Header.css";
 import { SiAirbnb } from "react-icons/si";
 import SearchIcon from "@material-ui/icons/Search";
@@ -10,10 +11,15 @@ const Header = (props) => {
   return (
     <div className="headerSection">
       {/* logo_iconSection starts here */}
-      <div className="headerSection__iconContainer">
-        <SiAirbnb className="iconContainer__logo" />
-        airB
-      </div>
+
+      <Link to="/" className="logo__link">
+        {" "}
+        <div className="headerSection__iconContainer">
+          <SiAirbnb className="iconContainer__logo" />
+          <span>airB</span>
+        </div>
+      </Link>
+
       {/* logo_iconSection ends here */}
 
       {/************************************************************/}
@@ -21,7 +27,7 @@ const Header = (props) => {
       {/* input_iconSearch begins here */}
       <div className="headerSection__inputCenter">
         <input type="text" />
-        <SearchIcon className='search-icon'/>
+        <SearchIcon className="search-icon" />
       </div>
       {/* input_iconSearch ends here */}
 

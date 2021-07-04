@@ -5,8 +5,10 @@ import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 import { DateRangePicker } from "react-date-range";
 import "./Search.css";
 import { Button } from "@material-ui/core";
+import { useHistory } from "react-router";
 
 const Search = () => {
+  const history = useHistory()
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
@@ -29,7 +31,7 @@ const Search = () => {
           <PeopleAltIcon />
         </h2>
        <input min={0} defaultValue={5} type='number'/>
-       <Button>Search AirB</Button>
+       <Button onClick={() => history.push('/search')}>Search AirB</Button>
      
     </div>
   );

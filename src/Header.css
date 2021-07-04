@@ -14,7 +14,13 @@
 .headerSection__iconContainer {
   display: flex;
   align-items: center;
+  
 }
+
+.logo__link {
+  text-decoration: none;
+}
+
 
 .iconContainer__logo { 
   object-fit: contain;
